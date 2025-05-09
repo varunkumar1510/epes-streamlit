@@ -9,7 +9,13 @@ from io import BytesIO
 # Set Streamlit Page Config
 st.set_page_config(page_title="Transformer Service Report App", layout="wide")
 
-st.title("🔌 Excellent Power Engineering - Transformer Report Generator")
+col1, col2 = st.columns([1, 5])
+
+with col1:
+    st.image("favicon.ico", width=80)
+
+with col2:
+    st.markdown("## Excellent Power Engineering - Transformer Report Generator")
 
 # ---------------- Client Information ----------------
 st.header("Client Information")
